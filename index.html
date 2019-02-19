@@ -1,5 +1,7 @@
+
+
 <!doctype html>
-<html lang="Default">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -7,134 +9,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?9657">
+	<link rel="stylesheet" type="text/css" href="style.css?4264">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Nunito&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-3.3.1.min.js?250"></script>
+	<script src="./js/bootstrap.bundle.min.js?5086"></script>
+	<script src="./js/blocs.min.js?7297"></script>
 	<script src="./js/lazysizes.min.js" defer></script>
     <title>Home</title>
 
+<style>
+.img-circle {border-radius: 50%;}</style>
     
-<!-- Google Analytics -->
+<!-- Analytics -->
  
-<!-- Google Analytics END -->
+<!-- Analytics END -->
     
 </head>
 <body>
 <!-- Main container -->
 <div class="page-container">
     
-<!-- bloc-0 -->
-<div class="bloc bgc-outer-space d-bloc" id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand none" href="index.html">Rupert Moore</a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse navbar-1 collapse">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Projects<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li>
-									<a href="traderillo.html">Traderillo</a>
-								</li>
-								<li>
-									<a href="glove-project.html">Glove Project</a>
-								</li>
-								<li>
-									<a href="terraingen.html">Terrain Gen</a>
-								</li>
-								<li>
-									<a href="mentalhealth.html">Mental Health</a>
-								</li>
-								<li>
-									<a href="urban-courtyard.html">Urban Courtyard</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a href="music-vis.html">music-vis</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
-
-<!-- bloc-1 -->
-<div class="bloc bgc-outer-space d-bloc" id="bloc-1">
-	<div class="container bloc-sm">
+<!-- nava -->
+<div class="bloc d-lg-block object-hidden l-bloc" id="nava">
+	<div class="container  object-hidden">
 		<div class="row">
-			<div class="col-sm-6">
-				<img src="img/lazyload-ph.png" data-src="img/Rupertofly.svg" class="img-responsive lazyload" alt="Logo" />
-			</div>
-			<div class="col-sm-6">
-				<h2 class="mg-lg ">
-					<strong>Rupert Moore</strong>
-				</h2>
-				<h3 class="mg-sm">
-					Designer (She / Her)
-				</h3>
-				<p class="mg-lg">
-					Design Student From Melbourne, Australia<br>I'm currently studying Honours in Industrial Design at RMIT University.<br><br>Key areas of interest include but are not limited to: Service Design (particularly in public sector), Interaction and User Experience Design, and Product Design.<br>
-				</p>
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md" role="navigation">
+					<a class="navbar-brand link-style d-block ltc-medium-jungle-green" href="index.html"><img src="img/logo.svg" alt="logo" class="mr-2" width="32" height="64" />Ruby Quail Design</a>
+					<button id="nav-toggle" type="button" class="ml-auto ui-navbar-toggler navbar-toggler border-0 p-0" data-toggle="collapse" data-target=".navbar-1" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse navbar-1">
+						<ul class="site-navigation nav navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">Home</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-1 END -->
+<!-- nava END -->
+
+<!-- mainbloc -->
+<div class="bloc l-bloc " id="mainbloc">
+	<div class="container bloc-lg">
+		<div class="row align-items-center">
+			<div class="col-md-6 align-self-center offset-lg-0 col-lg-7">
+				<img src="img/lazyload-ph.png" data-src="img/logo-sidestack.svg" class="img-fluid float-lg-right lazyload" />
+			</div>
+			<div class="col-md-6 align-self-end col-lg-5">
+				<h1 class="h1-style mg-sm tc-blush">
+					Exhibition <br>Industrial <br>Service <br>Interaction <br>Digital
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- mainbloc END -->
 
 <!-- bloc-2 -->
-<div class="bloc full-width-bloc bgc-dark-lava d-bloc" id="bloc-2">
+<div class="bloc none bgc-bubble-gum tc-medium-jungle-green l-bloc" id="bloc-2">
 	<div class="container bloc-sm">
 		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center mg-md">
-					Projects
-				</h2>
+			<div class="col">
+				<h1 class="mg-lg h1-work-style">
+					Work
+				</h1>
 			</div>
 		</div>
-		<div class="row row-no-gutters">
-			<div class="col-sm-3">
-				<a href="index.html"><img src="img/lazyload-ph.png" data-src="img/Hon_c.svg" id="hon-but" class="img-responsive project-icon animSpeedFast pulse-hvr animated lazyload" /></a>
+		<div class="row">
+			<div class="col-md-3">
+				<img src="img/lazyload-ph.png" data-src="img/cosmosIcon.svg" class="img-fluid mx-auto d-block mg-md lazyload" />
+				<h3 class="mg-md tc-medium-jungle-green">
+					cosm.os
+				</h3>
+				<p>
+					"cosm.os" is a speculative digital simulation of a social network. cosm.os is made of many experiences designed to enable users to experiment and analyse how various social behaviours and systems affect one another. <br>Key Terms: Social Media, Speculative Design, Systems Thinking.
+				</p>
 			</div>
-			<div class="col-sm-3">
-				<a href="index.html"><img src="img/lazyload-ph.png" data-src="img/dlr_Colour.svg" id="dlr-but" class="img-responsive project-icon animSpeedFast pulse-hvr animated lazyload" /></a>
+			<div class="col-md-3">
+				<img src="img/lazyload-ph.png" data-src="img/dlrIcon.svg" class="img-fluid mx-auto d-block img-style mg-md lazyload" />
+				<h3 class="mg-md tc-medium-jungle-green">
+					Digital Legal Record
+				</h3>
+				<p>
+					Digital Legal Record was a project undertaken with Victoria Legal Aid aiming to simplify and improve their duty lawyer service. A number of interventions were devised including digitisation and standardisation of record keeping and improved communication between various legal bodies. <br>Key Terms: Service Design, Justice Sector, Social Design
+				</p>
 			</div>
-			<div class="col-sm-3">
-				<a href="index.html" class="lazyload"><img src="img/lazyload-ph.png" data-src="img/vor_c.svg" id="vor-but" class="img-responsive project-icon animSpeedFast pulse-hvr animated lazyload" /></a>
+			<div class="col-md-3">
+				<img src="img/lazyload-ph.png" data-src="img/courtyardIcon.svg" class="img-fluid mx-auto d-block img-bloc-2-style mg-md lazyload" />
+				<h3 class="mg-md tc-medium-jungle-green">
+					Urban Courtyard
+				</h3>
+				<p>
+					Urban Courtyard is an architecture and industrial design project aimed at high density living in the near future. Urban Courtyard incorporated growing social trends such as the gig economy and new technologies such as IoT into a collaborative living space. <br>Key Terms: Collaborative Living, High Density, Architecture, Storage
+				</p>
 			</div>
-			<div class="col-sm-3">
-				<a href="glove-project.html"><img src="img/lazyload-ph.png" data-src="img/MIG_c.svg" id="glove-but" class="img-responsive project-icon animSpeedFast pulse-hvr animated lazyload" /></a>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<a href="terraingen.html"><img src="img/lazyload-ph.png" data-src="img/terrain_c.svg" id="ter-but" class="img-responsive pulse-hvr animSpeedFast project-icon animated lazyload" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="index.html"><img src="img/lazyload-ph.png" data-src="img/mentalHealth_c.svg" id="mh-but" class="img-responsive mg-sm center-block pulse-hvr animSpeedFast project-icon animated lazyload" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="urban-courtyard.html"><img src="img/lazyload-ph.png" data-src="img/urbanCourtyard_c.svg" id="uc-but" class="img-responsive center-block img-rd-md animSpeedFast pulse-hvr project-icon animated lazyload" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="traderillo.html"><img src="img/lazyload-ph.png" data-src="img/Traderillo_c.svg" alt="Traderillo Logo" id="trad-but" class="img-responsive none animSpeedFast pulse-hvr project-icon animated lazyload" /></a>
+			<div class="col-md-3">
+				<img src="img/lazyload-ph.png" data-src="img/gloveIcon.svg" class="img-fluid mx-auto img-6-style d-block mg-md lazyload" />
+				<h3 class="mg-md tc-medium-jungle-green">
+					Glove
+				</h3>
+				<p>
+					Glove is a controller for mobile devices, allowing for non-visual, private interaction in public. <br>Key Terms: Interaction Design, Human-Computer Interaction, Portable Design, Electronics.<br>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -142,32 +128,66 @@
 <!-- bloc-2 END -->
 
 <!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
 
-<!-- Footer - bloc-9 -->
-<div class="bloc bgc-dark-lava-2 d-bloc none" id="bloc-9">
-	<div class="container bloc-md">
+<!-- bloc-3 -->
+<div class="bloc l-bloc" border-radius="150px" id="bloc-3">
+	<div class="container bloc-lg">
 		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md bloc-mob-center-text text-left">
-					Follow Me
-				</h3><a href="https://twitter.com/Rupertofly" class="a-btn a-block bloc-mob-center-text pull-left-block" target="_blank">Twitter</a><a href="https://github.com/Rupertofly" class="a-btn a-block bloc-mob-center-text pull-left-block">GitHub</a><a href="https://www.linkedin.com/in/rupert-moore-79872285" class="a-btn a-block bloc-mob-center-text pull-left-block">LinkedIn</a><a href="https://www.instagram.com/rupertofly/" class="a-btn a-block bloc-mob-center-text pull-left-block">Instagram</a>
+			<div class="col-md-6 col-lg-6">
+				<img src="img/lazyload-ph.png" data-src="img/50072431_10216686703533080_3729958124803588096_o%20copy.jpg" class="img-fluid img-circle img-bloc-3-style float-lg-right lazyload" />
+			</div>
+			<div class="col-md-6 align-self-center col-lg-6">
+				<p>
+					Ruby is an Industrial Design graduate from Melbourne. She is interested in socially conscious design and achieving positive social change through the use of digital technology. She is transgender and uses she/her pronouns.
+				</p>
+				<div class="divider-h">
+					<span class="divider divider-half"></span>
+				</div>
+				<div class="row">
+					<div class="col-lg-1 align-self-center">
+						<a href="mailto:enquires@rubyquail.design"><span class="ion ion-email my-link icon-md"></span></a>
+					</div>
+					<div class="col-lg-5 align-self-center">
+						<a href="mailto:enquires@rubyquail.design" class="a-btn a-block my-link ul">enquires@rubyquail.design</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1 align-self-center">
+						<a href="https://twitter.com/Rupertofly" target="_blank"><span class="ion ion-social-twitter my-link icon-md"></span></a>
+					</div>
+					<div class="col-lg-5 align-self-center">
+						<a href="https://twitter.com/Rupertofly" class="a-btn a-block my-link ul" target="_blank">@Rupertofly</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1 align-self-center">
+						<a href="https://www.linkedin.com/in/rubyquail/" target="_blank"><span class="ion ion-social-linkedin my-link icon-md"></span></a>
+					</div>
+					<div class="col-lg-5 align-self-center">
+						<a href="https://www.linkedin.com/in/rubyquail/" class="a-btn a-block my-link ul" target="_blank">/rubyquail</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1 align-self-center">
+						<a href="https://www.instagram.com/rupertofly/" target="_blank"><span class="ion ion-social-instagram my-link icon-md"></span></a>
+					</div>
+					<div class="col-lg-5 align-self-center">
+						<a href="https://www.instagram.com/rupertofly/" class="a-btn a-block my-link ul" target="_blank">@rupertofly</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- Footer - bloc-9 END -->
+<!-- bloc-3 END -->
 
 </div>
 <!-- Main container END -->
     
 
-
-<!-- Preloader -->
-<div id="page-loading-blocs-notifaction"></div>
-<!-- Preloader END -->
 
 </body>
 </html>
