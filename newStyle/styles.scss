@@ -1,47 +1,43 @@
-@import url("typeStyles.css");
-@import url(" https://fonts.googleapis.com/css?family=Quicksand:400,600,700|Ubuntu+Mono:400,700|Ubuntu:400,700&display=swap");
+@import url('typeStyles.css');
+@import 'cosm.os_colours.scss';
 body {
-  background-color: #474747;
+  background-color: $charcoal;
   margin: 0px;
-  color: #474747;
+  color: $charcoal;
 }
-
+@import url(' https://fonts.googleapis.com/css?family=Quicksand:400,600,700|Ubuntu+Mono:400,700|Ubuntu:400,700&display=swap');
 .grid {
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: $hint-of-red;
   margin: 1em 0.5em;
   padding-bottom: 30px;
   padding-top: 30px;
   padding-right: 40px;
   padding-left: 40px;
 }
-
 .gh {
   grid-area: h;
 }
-
 .gb {
   grid-area: b;
 }
-
 .footerimage {
   grid-area: f;
   align-items: end;
   z-index: 0;
-  background-image: url("../cosm-os/assets/green_top.svg"), url("../cosm-os/assets/red_top.svg");
+  background-image: url('../cosm-os/assets/green_top.svg'),
+    url('../cosm-os/assets/red_top.svg');
+
   background-repeat: no-repeat;
   background-size: auto 60px, auto 60px;
   background-position: bottom -4px right -4px, top -4px left -5px;
   background-clip: padding-box;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
-
 h1 {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  // font-weight: 00;
 }
-
 h3 {
-  font-family: "Ubuntu Mono";
+  font-family: 'Ubuntu Mono';
 }
-
-/*# sourceMappingURL=styles.css.map */
