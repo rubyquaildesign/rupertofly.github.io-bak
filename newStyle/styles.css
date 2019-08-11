@@ -8,6 +8,9 @@ body {
 
 .grid {
   border-radius: 8px;
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, 256px);
   background-color: #fafafa;
   margin: 1em 0.5em;
   padding-bottom: 30px;
@@ -26,7 +29,6 @@ body {
 
 .footerimage {
   grid-area: f;
-  align-items: end;
   z-index: 0;
   background-image: url("../cosm-os/assets/green_top.svg"), url("../cosm-os/assets/red_top.svg");
   background-repeat: no-repeat;

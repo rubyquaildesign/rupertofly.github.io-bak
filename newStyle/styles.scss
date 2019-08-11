@@ -8,6 +8,10 @@ body {
 @import url(' https://fonts.googleapis.com/css?family=Quicksand:400,600,700|Ubuntu+Mono:400,700|Ubuntu:400,700&display=swap');
 .grid {
   border-radius: 8px;
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, 256px);
+
   background-color: $hint-of-red;
   margin: 1em 0.5em;
   padding-bottom: 30px;
@@ -15,6 +19,7 @@ body {
   padding-right: 40px;
   padding-left: 40px;
 }
+
 .gh {
   grid-area: h;
 }
@@ -23,7 +28,6 @@ body {
 }
 .footerimage {
   grid-area: f;
-  align-items: end;
   z-index: 0;
   background-image: url('../cosm-os/assets/green_top.svg'),
     url('../cosm-os/assets/red_top.svg');
