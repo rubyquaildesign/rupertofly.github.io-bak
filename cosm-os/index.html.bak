@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Ruby Quail" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta
+      name="description"
+      content="Ruby is an Industrial Design graduate from Melbourne. She is interested in socially conscious design and achieving positive social change through the use of digital technology. This is her website"
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="http://rubyquail.design" />
+    <meta
+      property="og:description"
+      content="Ruby is an Industrial Design graduate from Melbourne. She is interested in socially conscious design and achieving positive social change through the use of digital technology. This is her website"
+    />
+    <title>Cosm.os</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand:700|Work+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body class="pb justify-content-center">
+    <div class="container wb mt-2 shadow-sm">
+      <div class="cosmbg-top"></div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-6 px-2">
+          <h1>cosm.os</h1>
+          <h4>Designing our future communities</h4>
+          <p>by Ruby Quail</p>
+        </div>
+      </div>
+      <div class="cosmbg-bottom"></div>
+    </div>
+    <div class="container wb mt-2 shadow-sm">
+      <div class="cosmbg-top"></div>
+      <div class="row mx-3">
+        <h2>Project Flow</h2>
+      </div>
+      <a
+        href="https://ruby-quail-portfolio-images.s3-ap-southeast-2.amazonaws.com/cosm.os/cosmosGraph.pdf"
+        ><img
+          class="img-fluid"
+          src="https://ruby-quail-portfolio-images.s3-ap-southeast-2.amazonaws.com/cosm.os/cosmosGraph.jpg"
+          alt="graph"
+          srcset=""
+      /></a>
+
+      <div class="cosmbg-bottom"></div>
+    </div>
+    <div class="container wb mt-2 shadow-sm">
+      <div class="cosmbg-top"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-10 px-2">
+          <h2>Goal</h2>
+          <h4>
+            Enable people to experiment with social situations, communities, and
+            identities, and by doing so develop insight into the social systems
+            that make up our digital lives
+          </h4>
+        </div>
+      </div>
+      <div class="cosmbg-bottom"></div>
+    </div>
+    <div class="container wb mt-2 shadow-sm">
+      <div class="cosmbg-top"></div>
+      <h2 class="mx-2">Friendship Exercise</h2>
+      <div class="row justify-content-center">
+        <div
+          class="col px-2 mx-4"
+          id="ffe"
+          style="height: 500px; background-color: #222222; border-radius: 0.4em;color: white;"
+        >
+          click here to load interactive element
+        </div>
+        <script>
+          (() => {
+            const p = document.querySelector('#ffe');
+
+            const cF = () => {
+              p.textContent = '';
+              p.append(document.createElement('iframe'));
+              const frame = p.querySelector('iframe');
+              frame.setAttribute(
+                'src',
+                'http://rubyquail.design/FriendshipFirstExercise'
+              );
+              frame.setAttribute('width', '100%');
+              frame.setAttribute('height', '100%');
+              frame.setAttribute(
+                'style',
+                'overflow: hidden; width:100%;height: 100%;border-radius: 0.4em;'
+              );
+              frame.setAttribute('scrolling', 'no');
+              frame.setAttribute('frameborder', '0');
+              p.setAttribute('style', 'height:800px');
+              p.removeEventListener('click', cF);
+            };
+            p.addEventListener('click', cF);
+          })();
+        </script>
+      </div>
+      <div class="cosmbg-bottom"></div>
+    </div>
+    <div class="container wb mt-2 shadow-sm">
+      <div class="cosmbg-top"></div>
+      <h2 class="mx-2">Graph Visualisation Experiment</h2>
+      <div class="row justify-content-center">
+        <div
+          class="col px-2 mx-4"
+          id="replace-force"
+          style="height: 500px; background-color: #222222; border-radius: 0.4em;color: white;"
+        >
+          click here to load interactive element
+        </div>
+        <script>
+          const p = document.querySelector('#replace-force');
+
+          const cF = () => {
+            p.textContent = '';
+            p.append(document.createElement('iframe'));
+            const frame = p.querySelector('iframe');
+            frame.setAttribute('src', 'http://rubyquail.design/forceGraphVis');
+            frame.setAttribute('width', '100%');
+            frame.setAttribute('height', '100%');
+            frame.setAttribute(
+              'style',
+              'overflow: hidden; width:100%;height: 100%;border-radius: 0.4em;'
+            );
+            frame.setAttribute('scrolling', 'no');
+            frame.setAttribute('frameborder', '0');
+            p.setAttribute('style', 'height:500px');
+            p.removeEventListener('click', cF);
+          };
+          p.addEventListener('click', cF);
+        </script>
+      </div>
+      <div class="cosmbg-bottom"></div>
+    </div>
+    <div class="container wb mt-2 shadow-sm">
+      <div class="cosmbg-top"></div>
+      <h2 class="mx-2">Friendship Exercise</h2>
+      <div class="row justify-content-center">
+        <div
+          class="col px-2 mx-4"
+          id="ffe"
+          style="height: 500px; background-color: #222222; border-radius: 0.4em;color: white;"
+        >
+          click here to load interactive element
+        </div>
+        <script>
+          (() => {
+            const p = document.querySelector('#ffe');
+
+            const cF = () => {
+              p.textContent = '';
+              p.append(document.createElement('iframe'));
+              const frame = p.querySelector('iframe');
+              frame.setAttribute(
+                'src',
+                'http://rubyquail.design/FriendshipFirstExercise'
+              );
+              frame.setAttribute('width', '100%');
+              frame.setAttribute('height', '100%');
+              frame.setAttribute(
+                'style',
+                'overflow: hidden; width:100%;height: 100%;border-radius: 0.4em;'
+              );
+              frame.setAttribute('scrolling', 'no');
+              frame.setAttribute('frameborder', '0');
+              p.setAttribute('style', 'height:800px');
+              p.removeEventListener('click', cF);
+            };
+            p.addEventListener('click', cF);
+          })();
+        </script>
+      </div>
+      <div class="cosmbg-bottom"></div>
+    </div>
+  </body>
+</html>
