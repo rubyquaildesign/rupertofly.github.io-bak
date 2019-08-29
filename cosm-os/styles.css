@@ -409,6 +409,7 @@ body {
   padding-right: 40px;
   padding-left: 40px;
   border-radius: 4px;
+  box-shadow: 0 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 .i-f {
@@ -444,6 +445,7 @@ body {
   height: 600px;
   vertical-align: middle;
   text-align: center;
+  cursor: pointer;
 }
 
 body {
@@ -451,6 +453,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: auto;
+}
+
+p {
+  display: block;
 }
 
 .cms {
@@ -481,6 +487,27 @@ h2 {
 
 img {
   border-radius: 4px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: max-content;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  align-items: center;
+}
+
+* > a > img {
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: max-content;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
