@@ -472,6 +472,11 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 576px) {
+  .slide {
+    padding: 30px 16px 30px 16px;
+  }
+}
 h1 {
   font-family: Nunito;
 }

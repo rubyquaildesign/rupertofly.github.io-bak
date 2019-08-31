@@ -13,6 +13,11 @@
   padding-right: 70px;
   padding-left: 60px;
 }
+@media (max-width: 576px) {
+  .cms {
+    padding: 80px 16px 80px 16px;
+  }
+}
 .display {
   font-family: Quicksand;
   font-size: 48px;
