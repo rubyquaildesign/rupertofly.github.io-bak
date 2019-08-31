@@ -383,6 +383,21 @@ body {
   text-align: right;
 }
 
+.navi {
+  padding: 15px 15px 115px 15px;
+  height: 45px;
+}
+
+.navi > .l {
+  float: left;
+  color: white;
+}
+
+.navi > .r {
+  float: right;
+  color: white;
+}
+
 @media (max-width: 576px) {
   .grid-summary {
     display: grid;
