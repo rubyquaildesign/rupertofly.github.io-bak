@@ -10,15 +10,15 @@
 .grid-summary > h3 {
   text-align: right;
 }
-.navi {
+.navigation-bar {
   padding: 15px 15px 115px 15px;
   height: 45px;
 }
-.navi > .l {
+.navigation-bar > .l {
   float: left;
   color: white;
 }
-.navi > .r {
+.navigation-bar > .r {
   float: right;
   color: white;
 }
@@ -49,18 +49,18 @@ body {
   border-radius: 4px;
   box-shadow: 0 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
 }
-.i-f {
+.image-floating {
   width: 100%;
   height: auto;
 }
-.fl-pg {
+.floating-page {
   min-width: auto;
   max-width: 480px;
 }
-.fl-ct {
+.flex-content {
   display: flex;
 }
-.frm-content {
+.form-content {
   width: 100%;
   display: block;
 
@@ -68,11 +68,11 @@ body {
   border-radius: 8px;
   min-height: 600px;
 }
-.ifr {
+.iframe-class {
   border-radius: 8px;
   min-height: 600px;
 }
-.chtl {
+.click-here-to-load-class {
   color: white;
   width: auto;
   height: 600px;

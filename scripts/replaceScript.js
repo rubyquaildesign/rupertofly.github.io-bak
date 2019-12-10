@@ -9,9 +9,12 @@ function replaceIF(id, src) {
   ifr.setAttribute('height', '600px');
   ifr.setAttribute('frameborder', '0');
   ifr.setAttribute('src', src);
-  ifr.classList.add('ifr');
+  ifr.classList.add('iframe-class');
   item.appendChild(ifr);
-  item.setAttribute('style', 'background-color: rgba(0,0,0,0);');
+  item.setAttribute(
+    'style',
+    'background-color: rgba(0,0,0,0);'
+  );
   const link = document.createElement('a');
   link.innerText = 'close';
   link.classList.add('clbtn');
